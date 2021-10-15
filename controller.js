@@ -32,21 +32,7 @@ var controller = {
 			]
 		};
 		res.send(jsonResponse);
-	},
-
-	interactions : function(req, res) {
-		if (req.header('Accept').includes('application/json')){
-			let jsonResponse = {};
-			res.send(result);
-		} else {
-		
-			res.render("pages/index", {} );
-		}
 	}
-
-
-
-
 }
 
 module.exports = controller;
