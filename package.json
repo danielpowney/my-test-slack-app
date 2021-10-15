@@ -1,0 +1,28 @@
+{
+  "name": "interaction-studio-react-website",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "debug": "^4.3.1",
+    "ejs": "^3.1.6",
+    "events": "^3.3.0",
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielpowney/interaction-studio-react-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielpowney/interaction-studio-react-website/issues"
+  },
+  "homepage": "https://github.com/danielpowney/interaction-studio-react-website#readme",
+  "description": ""
+}
