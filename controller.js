@@ -32,6 +32,15 @@ var controller = {
 			]
 		};
 
+		
+
+
+		res.send(jsonResponse);
+	},
+
+
+	interactions : function(req, res) {
+
 		/*
 		 * Mulak's code
 		 */
@@ -62,20 +71,27 @@ var controller = {
 		  });
 		});
 		var postData = JSON.stringify({
-		  "Name": "Time Entry1",
+		  "Name": "Time Entry2",
 		  "Email__c": "mulak@sf.com",
 		  "Hours__c": 5
 		});
 		req1.write(postData);
 		req1.end();
 
+		let jsonResponse = {
+		    "blocks": [
+				{
+					"type": "section",
+					"text": {
+						"type": "mrkdwn",
+						"text": "*Timecard submitted thanks!*"
+					}
+				}
+			]
+		};
 
 		res.send(jsonResponse);
-	},
-
-
-	interactions : function(req, res) {
-		return "hello world!";
+		
 	}
 }
 
