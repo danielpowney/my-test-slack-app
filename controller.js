@@ -36,7 +36,7 @@ var controller = {
 			        }
 			    ]
 			};
-			res.send(result);
+			res.send(jsonResponse);
 		//} else {
 		//	res.render("pages/index", {} );
 		//}
