@@ -11,13 +11,35 @@ var controller = {
 	},
 
 	menus : function(req, res) {
-		if (req.header('Accept').includes('application/json')){
-			let jsonResponse = {};
+		//if (req.header('Accept').includes('application/json')){
+			let jsonResponse = {
+			    "options": [{
+			            "text": {
+			                "type": "plain_text",
+			                "text": "*this is plain_text text*"
+			            },
+			            "value": "value-0"
+			        },
+			        {
+			            "text": {
+			                "type": "plain_text",
+			                "text": "*this is plain_text text*"
+			            },
+			            "value": "value-1"
+			        },
+			        {
+			            "text": {
+			                "type": "plain_text",
+			                "text": "*this is plain_text text*"
+			            },
+			            "value": "value-2"
+			        }
+			    ]
+			};
 			res.send(result);
-		} else {
-		
-			res.render("pages/index", {} );
-		}
+		//} else {
+		//	res.render("pages/index", {} );
+		//}
 	},
 
 	interactions : function(req, res) {
