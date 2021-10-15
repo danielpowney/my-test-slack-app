@@ -18,16 +18,16 @@ var controller = {
 					"text": {
 						"type": "mrkdwn",
 						"text": "<https://org62.lightning.force.com/one/one.app#eyJjb21wb25lbnREZWYiOiJvbmU6YWxvaGFQYWdlIiwiYXR0cmlidXRlcyI6eyJhZGRyZXNzIjoiaHR0cHM6Ly9vcmc2Mi0tcHNlLm5hMTI4LnZpc3VhbC5mb3JjZS5jb20vYXBleC9QU0FUaW1lY2FyZEVudHJ5In0sInN0YXRlIjp7fX0%3D|Go To Org62 Time Entry>"
-					},
-					"accessory": {
-						"type": "button",
-						"text": {
-							"type": "plain_text",
-							"text": "Copy & Submit From Previous Week",
-							"emoji": true
-						},
-						"value": "view_alternate_1"
 					}
+				},
+				{
+				    "type": "button",
+				    "text": {
+				        "type": "plain_text",
+				        "text": "Copy & Submit From Previous Week"
+				      },
+				      "value": "click_me_123",
+				      "action_id": "button"
 				}
 			]
 		};
@@ -41,3 +41,16 @@ var controller = {
 }
 
 module.exports = controller;
+
+/*
+
+					"accessory": {
+						"type": "button",
+						"text": {
+							"type": "plain_text",
+							"text": "Copy & Submit From Previous Week",
+							"emoji": true
+						},
+						"value": "view_alternate_1"
+					}
+				}*/
